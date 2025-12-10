@@ -23,7 +23,7 @@ on:
           or "all" to build every kernel.
         required: true
         type: string
-        default: 'all'
+        default: 'a12-5.10,a13-5.15'
       kernelsu_variant:
         description: "Select KernelSU"
         required: true
@@ -42,7 +42,7 @@ on:
         - Stable(标准)
         - Dev(开发)
         - Other(其他/指定)
-        default: Stable(标准)
+        default: Dev(开发)
       version:
         description: 'Custom version name (e.g., characters after 5.10.198 / leave blank to use default version number)'
         required: false
